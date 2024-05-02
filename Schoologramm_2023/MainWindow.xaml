@@ -1,0 +1,33 @@
+﻿<Window x:Class="Schoologramm_2023.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Schoologramm_2023"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="472" Width="810">
+
+    <StackPanel Margin="20">
+
+        <Label x:Name="label_Fach" Background ="Gray">Fach:</Label>
+        <TextBox x:Name="txtBox_Fach" TextChanged="txtBox_Fach_TextChanged"/>
+        <Label x:Name="label_Auftrag" Background ="Gray">Auftrag:</Label>
+        <TextBox x:Name="txtBox_Auftrag" TextChanged="txtBox_Auftrag_TextChanged"/>
+        <Label x:Name="label_Fälligkeit" Background ="Gray">Fälligkeit:</Label>
+        <TextBox x:Name="txtBox_Fälligkeit" TextChanged="txtBox_Fälligkeit_TextChanged"/>
+
+        <Button x:Name="aufgabe_Einschreiben" Click="Button_Click" Margin="10">Aufgaben einschreiben</Button>
+
+        <Label x:Name="label_Prüfungsfach" Background="Gray">Prüfungsfach:</Label>
+        <TextBox x:Name="txtBox_Prüfungsfach" TextChanged="txtBox_Prüfungsfach_TextChanged"/>
+        <Label x:Name="label_Prüfungsstoff" Background="Gray">Prüfungsstoff:</Label>
+        <TextBox x:Name="txtBox_Prüfungsstoff" TextChanged="txtBox_Prüfungsstoff_TextChanged"/>
+        <Label x:Name="label_Prüfungsdatum" Background="Gray">Prüfungsdatum:</Label>
+        <TextBox x:Name="txtBox_Prüfungsdatum" TextChanged="txtBox_Prüfungsdatum_TextChanged"/>
+
+        <Button x:Name="prüfung_Einschreiben" Click="Button_Click_1" Margin="10">Prüfung einschreiben</Button>
+        <Button x:Name="open_Page" Click="Button_Click_2" Width="252" Content="Eingeschriebene Objekte anzeigen"/>
+        <Frame x:Name="Page_List" Width="412" Height="163"/>
+
+    </StackPanel>
+</Window>
